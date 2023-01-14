@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <title>Spotify clone</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!--search nav-->
+  <nav>
+    <ul>
+
+    </ul>
+  </nav>
+
+  <!--main-->
+  <div class="main">
+    <!--left nav class-->
+    <i class="fa-solid fa-bars ham"></i>
+    <div class="left">
+        <nav>
+          <ul>
+            <i class="fa-solid fa-xmark cross"></i>
+            <li>
+              <div>Your Library</div>
+            </li>
+
+            <li>
+              <div>Premium</div>
+            </li>
+
+            <li>
+              <div>Create Playlist</div>
+            </li>
+
+            <li>
+              <div>Liked songs</div>
+            </li>
+          </ul>
+        </nav>
+      </div> 
+
+    <!--RIGHT MAIN class-->
+     <div class="right">
+
+      <!--recommended for today song-->
+       <div class="headContainer">
+        <div class="main-1">
+
+          <img src="./images/music.jpeg" alt="" />
+
+          <div class="hCDes">
+            <h1>Song</h1>
+            <p>Listen your favorite music with Spotify.</p>
+            <div class="btn">
+              <button class="play">Play</button>
+              <button class="save">Save</button>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <!--RECENT PLAYED -->
+       <section class="recentPlayed">
+        <div class="recentplayed-artist">
+          <img src="./images/weekend.jpg" alt="" />
+          <p>Weeknd</p>
+        </div>
+
+
+        <div class="recentplayed-artist">
+          <img
+            src="./images/raftar.jpg"
+            alt="" />
+          <p>Raftar</p>
+        </div>
+
+
+
+        <div class="recentplayed-artist">
+          <img src="./images/krishna.jpg" alt="" />
+          <p>Krishna</p>
+
+        </div>
+
+        <div class="recentplayed-artist">
+          <img src="./images/diljeeet.jpg" alt="" />
+          <p>Diljeet Doshnj</p>
+        </div>
+
+        <div class="recentplayed-artist">
+
+          <img src="./images/liked.jpg" alt="" />
+          <p>Liked songs</p>
+
+        </div>
+
+        <div class="recentplayed-artist">
+          <img src="./images/anuvJain.jpg" alt="" />
+          <p>Anuv Jain</p>
+        </div>
+      </section> 
+
+
+
+      <!-- slide-1  -->
+      <h1>Shows to try</h1>
+       <section class="slider1">
+       
+        <div class="slide">
+          <div class="item">
+            <img
+              src="./images/bb.jpg"
+              alt=""  />
+            <h4>Bhuvan bam</h4>
+          </div>
+
+          <div class="item">
+            <img
+              src="./images/king.jpg"
+              alt=""/>
+            <h4>King</h4>
+          </div>
+
+          <div class="item">
+            <img
+              src="./images/arjeet.jpg"
+              alt=""  />
+            <h4>Arjeet singh</h4>
+          </div>
+
+          <div class="item">
+            <img
+              src="./images/mohit.jpg"
+              alt="" />
+            <h4>Mohit chauhan</h4>
+          </div>
+
+          <div class="item">
+            <img
+              src="./images/rekha.jpg"
+              alt=""  />
+            <h4>Rekha bhardwaj</h4>
+          </div>
+
+          <div class="item">
+            <img
+              src="./images/HARRYSTYLES.jpg"
+              alt="" />
+              <h4>Harry Styles</h4>
+          </div> 
+
+
+        </div>
+
+      </section>  
+    </div>
+  </div>
+
+
+
+  <script>
+    let cross = document.getElementsByClassName("cross")[0];
+    let ham = document.getElementsByClassName("ham")[0];
+    let nav = document.getElementsByClassName("left")[0]
+    let navcome = document.getElementsByClassName("leftCome")[0]
+    
+    ham.addEventListener("click" , ()=>{
+      nav.classList.toggle("leftCome")
+    })
+    cross.addEventListener("click" , ()=>{
+      nav.classList.toggle("leftCome")
+    })
+    if(nav.contains!= navcome){
+      ham.style.opacity = ".7";
+    }
+   
+  </script>
+</body>
+
+</html>
